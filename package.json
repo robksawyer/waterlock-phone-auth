@@ -1,0 +1,52 @@
+{
+  "name": "waterlock-local-auth",
+  "version": "0.0.6",
+  "description": "local authentication for waterlock",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidrivera/waterlock-local-auth"
+  },
+  "keywords": [
+    "waterlock",
+    "local",
+    "authentication",
+    "sails"
+  ],
+  "devDependencies":{
+    "mocha": "*",
+    "should": "*",
+    "proxyquire": "*",
+    "coveralls": "*",
+    "istanbul": "*",
+    "jshint": "*"
+  },
+  "dependencies":{
+    "bcryptjs": "~2.1.0",
+    "lodash": "~2.4.1",
+    "moment": "~2.9.0",
+    "nodemailer": "0.7.1",
+    "jade": "~1.3.1",
+    "jwt-simple": "~0.2.0",
+    "node-uuid": "~1.4.2"
+  },
+  "author": "David Rivera <david.r.rivera193@gmail.com>",
+  "contributors": [
+    {
+      "name": "David Rivera",
+      "email": "david.r.rivera193@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidrivera/waterlock-local-auth/issues"
+  },
+  "homepage": "https://github.com/davidrivera/waterlock-local-auth",
+  "preferGlobal": false,
+  "engines": {
+    "node": ">=0.10"
+  }
+}
