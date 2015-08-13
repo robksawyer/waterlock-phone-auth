@@ -24,24 +24,21 @@ module.exports.waterlock = {
   authMethod: [
     {
       name:"waterlock-phone-auth",
-      passwordReset:{
+      authReset:{
         tokens: false,
-        mail: {
+        phone: {
           options:{
-            service: "Gmail",
+            service: "twilio",
             auth: {
-              user: "gmail.user@gmail.com",
-              pass: "userpass"
+              sid: "SOME_TWILIO_ACCOUNT_SID",
+              token: "SOME_TWILIO_TOKEN"
             }
-          },
-          from: "no-reply@domain.com",
-          subject: "Your password reset!",
-          forwardUrl: "http://localhost:1337"
+          }
         },
-        template:{
-          file: "../views/email.jade",
-          vars:{}
-        }
+      //   template:{
+      //     file: "../views/phone.jade",
+      //     vars:{}
+      //   }
       }
     }
   ],
