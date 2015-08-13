@@ -9,8 +9,8 @@ var pathStub = {
   }
 }
 
-exports.waterlock_local = proxyquire.noCallThru().load('../lib/waterlock-local-auth', 
-  { 
+exports.waterlock_local = proxyquire.noCallThru().load('../lib/waterlock-phone-auth', 
+  {
     'path': pathStub
   });
 

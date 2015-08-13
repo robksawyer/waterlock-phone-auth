@@ -1,14 +1,14 @@
-# Waterlock Local Auth
+# Waterlock Phone Auth (WARNING: Not Yet Functional)
 
-[![Build Status](http://img.shields.io/travis/waterlock/waterlock-local-auth.svg?style=flat)](https://travis-ci.org/waterlock/waterlock-local-auth) [![NPM version](http://img.shields.io/npm/v/waterlock-local-auth.svg?style=flat)](http://badge.fury.io/js/waterlock-local-auth) [![Dependency Status](http://img.shields.io/gemnasium/davidrivera/waterlock-local-auth.svg?style=flat)](https://gemnasium.com/davidrivera/waterlock-local-auth)
+[![Build Status](http://img.shields.io/travis/waterlock/waterlock-phone-auth.svg?style=flat)](https://travis-ci.org/waterlock/waterlock-phone-auth) [![NPM version](http://img.shields.io/npm/v/waterlock-phone-auth.svg?style=flat)](http://badge.fury.io/js/waterlock-phone-auth)
 
-waterlock-local-auth is a module for [waterlock](http://waterlock.ninja/)
-providing a local authentication method for users either based on username or email.
+waterlock-phone-auth is a module for [waterlock](http://waterlock.ninja/)
+providing a phone authentication method for users based on their phone number.
 
 ## Usage
 
 ```bash
-npm install waterlock-local-auth
+npm install waterlock-phone-auth
 ```
 
 set the following option in your `waterlock.js` config file
@@ -16,7 +16,7 @@ set the following option in your `waterlock.js` config file
 ```js
 authMethod:[
 	{
-		name: "waterlock-local-auth",
+		name: "waterlock-phone-auth",
 		passwordReset: {
 			tokens: boolean, // object containing information regarding password resets
 
@@ -40,16 +40,15 @@ authMethod:[
 ```
 
 ## Auth Model
-Local auth adds the following attributes onto the Auth model
+Phone auth adds the following attributes onto the Auth model
 
 ```js
-  email: {
-    type: 'email',
+  phone: {
+    type: 'STRING',
     unique: true
   },
-  password: {
-    type: 'STRING',
-    minLength: 8
+  carrier: {
+    type: 'STRING'
   },
   resetToken: {
     model: 'resetToken'

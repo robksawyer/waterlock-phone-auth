@@ -1,14 +1,14 @@
 {
-  "name": "waterlock-local-auth",
+  "name": "waterlock-phone-auth",
   "version": "0.0.6",
-  "description": "local authentication for waterlock",
+  "description": "phone authentication for waterlock",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidrivera/waterlock-local-auth"
+    "url": "https://github.com/robksawyer/waterlock-phone-auth"
   },
   "keywords": [
     "waterlock",
@@ -33,7 +33,7 @@
     "jwt-simple": "~0.2.0",
     "node-uuid": "~1.4.2"
   },
-  "author": "David Rivera <david.r.rivera193@gmail.com>",
+  "author": "Rob Sawyer <robksawyer@gmail.com>",
   "contributors": [
     {
       "name": "David Rivera",
@@ -42,9 +42,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davidrivera/waterlock-local-auth/issues"
+    "url": "https://github.com/robksawyer/waterlock-phone-auth/issues"
   },
-  "homepage": "https://github.com/davidrivera/waterlock-local-auth",
+  "homepage": "https://github.com/robksawyer/waterlock-phone-auth",
   "preferGlobal": false,
   "engines": {
     "node": ">=0.10"

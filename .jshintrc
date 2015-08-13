@@ -12,7 +12,7 @@
 	"trailing": true,
 	"undef": true,
 	"unused": true,
-	"indent":2,
+	"indent": 3,
 	"bitwise":false,
 	"camelcase":true,
 	"freeze":true,
