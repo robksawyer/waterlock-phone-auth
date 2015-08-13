@@ -1,4 +1,5 @@
-# Waterlock Phone Auth (WARNING: Not Yet Functional)
+# Waterlock Phone Auth
+> WARNING: Not Yet Functional
 
 [![Build Status](http://img.shields.io/travis/waterlock/waterlock-phone-auth.svg?style=flat)](https://travis-ci.org/waterlock/waterlock-phone-auth) [![NPM version](http://img.shields.io/npm/v/waterlock-phone-auth.svg?style=flat)](http://badge.fury.io/js/waterlock-phone-auth)
 
